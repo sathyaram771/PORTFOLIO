@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Professional Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+            font-size: 2.5rem;
+        }
+
+        header h2 {
+            font-weight: 300;
+            margin-bottom: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        section {
+            padding: 3rem 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .education,
+        .skills,
+        .projects,
+        .achievements-certifications,
+        .contact {
+            margin-bottom: 2rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .education-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .education-item {
+            width: 30%;
+            background: #f4f4f4;
+            padding: 1rem;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .education-item h4 {
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .education-item p {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-list {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .skill-column {
+            width: 30%;
+            background: #f4f4f4;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .skill-column h4 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .skill-column ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .techstack {
+            margin-top: 1rem;
+        }
+
+        .techstack h5 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-column ul li {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .project-item {
+            background: #f4f4f4;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .achievements-certifications {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .achievement,
+        .certification {
+            width: 45%;
+            background: #f4f4f4;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .achievement h4,
+        .certification h4 {
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .contact a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+        .internships {
+    margin-bottom: 2rem;
+}
+
+.internship-item {
+    background: #f4f4f4;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.internship-item h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.internship-item p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.internship-item ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    font-size: 1.1rem;
+}
+.passport-photo {
+    position: absolute;
+    top: 1rem; /* Distance from the top */
+    left: 1rem; /* Distance from the left */
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #333;
+}
+
+.passport-photo img {
+    width: 100%;
+    height: auto;
+}
+
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>SATHYARAM P</h1>
+            <h2>SOFTWARE DEVELOPER</h2>
+            <nav>
+                <ul>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#internships">Internships</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#achievements-certifications">Achievements & Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="passport-photo">
+        <img src="myphotom.jpg" alt="Passport Photo">
+    </div>
+
+    <section id="education" class="education">
+        <div class="container">
+            <h3>Education</h3>
+            <div class="education-container">
+                <div class="education-item">
+                    <h4>10th Grade</h4>
+                    <p>The Ashok Leyland School</p>
+                    <p>2019-2020</p>
+                    <p>Percentage: 91</p>
+                </div>
+                <div class="education-item">
+                    <h4>12th Grade</h4>
+                    <p>The Ashok Leyland School</p>
+                    <p>2021-2022</p>
+                    <p>Percentage: 93.4</p>
+                </div>
+                <div class="education-item">
+                    <h4>College</h4>
+                    <p>Chennai Institute Of Technology</p>
+                    <p>2022-2026</p>
+                    <p>CGPA: 9.22</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="internships" class="internships">
+        <div class="container">
+            <h3>Internships</h3>
+            <div class="internship-item">
+                <h4>Internship at CISCO Networking Academy</h4>
+                <p><strong>Position:</strong>Technical Intern</p>
+                <p><strong>Duration:</strong> May 2024 - July 2024</p>
+                <p><strong>Description:</strong></p>
+                <ul>
+                    <li>Learned about Networking Essentials with the packet sniffer tools and visualization of the course material</li>
+                    <li>Developed Packet Tracer project on the Problem Statement that Cisco Academy provides with real-time stimulation and endpoints</li>
+                
+                </ul>
+            </div>
+            <div class="internship-item">
+                <h4>Internship at Bharat Intern</h4>
+                <p><strong>Position:</strong>Mobile Application Developer</p>
+                <p><strong>Duration:</strong> Nov 2023 - Jan 2024</p>
+                <p><strong>Description:</strong></p>
+                <ul>
+                    <li>Developed exciting projects provided to me using Flutter with real-time access</li>
+                    <li>Developed BMI calculator, Dynamic Calculator, Login and Signup Page with authentication with the help of Android Studio as IDE</li>
+                
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h3>Projects</h3>
+            <div class="project-item">
+                <h4>Windows Attendence Application using .NET</h4>
+                <div class="techstack">
+                    <h5>Techstack:</h5>
+                    <p>C#, Python, Supabase, SMTP</p>
+                </div>
+                <li>Implemented a facial recognition system for marking attendance.</li>
+                <li>Utilized .NET for Front end development and OpenCV for facial recognition using Python in backend.</li>
+                <li>Integrated email notifications for daily attendance reports including data handling and retrievel.</li>
+            </div>
+            <div class="project-item">
+                <h4>Drug Awareness Mobile Application</h4>
+                <div class="techstack">
+                    <h5>Techstack:</h5>
+                    <p>Dart,Python</p>
+                </div>
+                <li>Developed to create Drug awareness by creating a Community Life-redemption.</li>
+                <li>Application recommends doctors,live interactions,Updates with Real time news and automated Stories genertion.</li>
+                <li>Backend Hosted using AWS along with Supabase for data handling integrated with Flutter as frontend</li>
+            </div>
+            <div class="project-item">
+                <h4>Web Application for Virtual Blood Bank</h4>
+                <div class="techstack">
+                    <h5>Techstack:</h5>
+                    <p>Javascript, Python</p>
+                </div>
+                <li>Developed a Web application for Virtual Blood bacnk which gives a virtual assistance for Blood Donation and Bood Requests</li>
+                <li>Crafted with automated Bill generation and authentication.</li>
+                <li>Used Python's Built in Flask module with a modern sleek UI design</li>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h3>Skills</h3>
+            <div class="skill-list">
+                <div class="skill-column">
+                    <h4>Languages</h4>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                        <li>JavaScript</li>
+                        <li>C#</li>
+                        <li>SQL</li>
+                        <li>R</li>
+                    </ul>
+                </div>
+                <div class="skill-column">
+                    <h4>Web Frameworks</h4>
+                    <ul>
+                        <li>React.js</li>
+                        <li>Node.js/Express.js</li>
+                        <li>Flutter</li>
+                        <li>Flask</li>
+                        <li>.NET</li>
+                        <li>Supabase</li>
+                        <li>Firebase</li>
+                    </ul>
+                </div>
+                <div class="skill-column">
+                    <h4>Software</h4>
+                    <ul>
+                        <li>Git and GitHub</li>
+                        <li>Networking</li>
+                        <li>AWS</li>
+                        <li>DSA</li>
+                        <li>RestApi</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements-certifications" class="achievements-certifications">
+        <div class="container">
+            <h3>Achievements & Certifications</h3>
+            <div class="achievements-certifications">
+                <div class="achievement">
+                    <h4>Participation: Haryana-Police-Hackathon</h4>
+                    <p>Gamifying the drug awareness</p>
+                </div>
+                <div class="certification">
+                    <h4>COURSERA:</h4>
+                    <p>AWS Fundamentals, Excel to Power BI,</p>
+                </div>
+                <div class="achievement">
+                    <h4>HeromotoCorp</h4>
+                    <p>Assessment on DSA</p>
+                </div>
+                <div class="certification">
+                    <h4>CISCO Networking Academy</h4>
+                    <p>Networking Essentials, Cyber Security Essentials</p>
+                </div>
+                <div class="achievement">
+                    <h4>Coding Platforms</h4>
+                    <li>LeetCode: 3 badges with 690+ problems Solved</li>
+                    <li>CodeChef: 1331 Rating</li>
+                    <li>Codeforces: 953 Rating</li>
+                    <li>SkillRack: 318 problems solved</li>
+                </div>
+                <div class="certification">
+                    <h4>NPTEAL</h4>
+                    <p>Cyber Security and Privacy</p>
+                </div>
+                <div class="achievement">
+                    <h4>Extra Curricular Activities</h4>
+                    <p>Serving as Senior Under Officer of my College NCC contigent</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h3>Contact Me</h3>
+            <p>If you would like to get in touch, you can reach me through the following channels:</p>
+            <ul>
+                <li>Email: <a href="mailto:sathyaalh3@gmail.com">Mail Me</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/sathyaram-p-90962425b" target="_blank">LinkedIn Profile</a></li>
+                <li>Phone: <a href="tel:+919003560430">Phone Contact</a></li>
+                <li>GitHub: <a href="https://github.com/sathyaram771" target="_blank">GitHub Profile</a></li>
+            </ul>
+        </div>
+    </section
+
+</body>
+</html>
